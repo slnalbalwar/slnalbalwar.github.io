@@ -24,8 +24,8 @@ const displayEntries = () => {
         <th class="px-4 py-2">Name</th>
         <th class="px-4 py-2">Email</th>
         <th class="px-4 py-2">Password</th>
-        <th class="px-4 py-2">DoB</th>
-        <th class="px-4 py-2">Terms Accepted???</th>
+        <th class="px-4 py-2">Dob</th>
+        <th class="px-4 py-2">Accepted terms?</th>
     </tr>${tableEntries}</table>`;
 
     let details = document.getElementById("userEntriesDiv");
@@ -49,11 +49,11 @@ const saveUserForm = (event) => {
     userEntry.push(entry);
     localStorage.setItem("userEntries", JSON.stringify(userEntry));
     displayEntries();
-    document.getElementById("inline-full-name").value="";
-    document.getElementById("inline-email").value="";
-    document.getElementById("inline-password").value="";
-    document.getElementById("inline-dob").value="";
-    document.getElementById("accept-terms").checked=false;
+//     document.getElementById("inline-full-name").value="";
+//     document.getElementById("inline-email").value="";
+//     document.getElementById("inline-password").value="";
+//     document.getElementById("inline-dob").value="";
+//     document.getElementById("accept-terms").checked=false;
 }
 userForm.addEventListener("submit", saveUserForm);
 displayEntries();
