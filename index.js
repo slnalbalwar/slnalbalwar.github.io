@@ -34,10 +34,10 @@ const displayEntries = () => {
 }
 const saveUserForm = (event) => {
     event.preventDefault();
-    const name = document.getElementById("inline-full-name").value;
-    const email = document.getElementById("inline-email").value;
-    const password = document.getElementById("inline-password").value;
-    const dob = document.getElementById("inline-dob").value;
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    const dob = document.getElementById("dob").value;
     const acceptedTerms = document.getElementById("accept-terms").checked;
     const entry = {
         name: name,
